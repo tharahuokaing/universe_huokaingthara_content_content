@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="km" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSE HUOKAING THARA - Content Hub / មជ្ឈមណ្ឌលខ្លឹមសារ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="universe_huokaingthara.jpg">
+</head>
+<body>
+
+    <!-- Holographic Scanline Overlay -->
+    <div id="holo-overlay"></div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="logo-container">
+            <i class="fa-solid fa-clapperboard spin-icon"></i>
+            <h1>UNIVERSE HUOKAING THARA <span class="sub-title">មជ្ឈមណ្ឌលខ្លឹមសារ / Content Hub</span></h1>
+        </div>
+        <div class="controls">
+            <button id="langToggleBtn" class="control-btn">🇰🇭 / EN</button>
+            <button id="themeToggleBtn" class="control-btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Hero Section -->
+        <section class="hero-card">
+            <div class="badge">🎬 UNIVERSE HUOKAING THARA CONTENT CATALOG</div>
+            <h2 class="km">កម្រងស្នាដៃ ភាពយន្ត តន្ត្រី កំប្លែង និងនិទានរឿងខ្មោចខ្មែរ</h2>
+            <h2 class="en">Films, Music, Comedy Pranks & Khmer Ghost Stories</h2>
+            <p class="km">
+                ស្វែងយល់ពីបណ្តុំខ្លឹមសារកម្សាន្ត និងផលិតកម្មឌីជីថលរបស់ <strong>UNIVERSE HUOKAING THARA Group</strong> ដែលផលិត និងអភិវឌ្ឍក្រោមការដឹកនាំ និងការរួមចំណែកពីក្រុមការងារ លោក <strong>ជອນ រតនៈ</strong> និងក្រុមអ្នកសរសេរកូដជំនាញ។
+            </p>
+            <p class="en">
+                Explore the entertainment catalog and digital productions of <strong>UNIVERSE HUOKAING THARA Group</strong>, created alongside contributor <strong>Mr. Chorn Rothanak</strong> and engineered by our elite programmers and developers.
+            </p>
+
+            <!-- Search & Category Filter Bar -->
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="contentSearch" placeholder="ស្វែងរកខ្លឹមសារ... / Search movies, music, pranks, ghost stories...">
+                </div>
+                <div class="filter-pills">
+                    <button class="pill-btn active" data-filter="all">All / ទាំងអស់</button>
+                    <button class="pill-btn" data-filter="movies">Movies / ភាពយន្ត</button>
+                    <button class="pill-btn" data-filter="ghost">Ghost Stories / រឿងខ្មោច</button>
+                    <button class="pill-btn" data-filter="comedy">Comedy & Pranks / កំប្លែង</button>
+                    <button class="pill-btn" data-filter="music">Music / តន្ត្រី</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Catalog Grid -->
+        <section class="catalog-section">
+            <h3 class="section-heading">
+                <i class="fa-solid fa-photo-film"></i>
+                <span class="km">បញ្ជីខ្លឹមសារ និងកម្មវិធីសំខាន់ៗ (Featured Content Catalog)</span>
+                <span class="en">Featured Content & Series</span>
+            </h3>
+
+            <div class="content-grid" id="contentGrid">
+
+                <!-- Item 1: Movies -->
+                <article class="content-card featured" data-cat="movies">
+                    <div class="card-top">
+                        <span class="cat-badge">FILM • CINEMA</span>
+                        <span class="status-tag">PRODUCTION / RELEASES</span>
+                    </div>
+                    <h4 class="km">ភាពយន្តខ្នាតធំ និងរឿងភាគកម្សាន្ត</h4>
+                    <h4 class="en">Feature Films & Narrative Series</h4>
+                    <p class="km">ស្នាដៃភាពយន្តមនោសញ្ចេតនា កំប្លែង និងរន្ធត់ ដែលផលិតសម្រាប់ទស្សនិកជនទាំងលើអេក្រង់ធំ និងបណ្តាញឌីជីថល។</p>
+                    <p class="en">Dramatic, comedic, and suspenseful screen productions crafted for theatrical and digital audiences.</p>
+                    <div class="card-footer">
+                        <span class="meta-info"><i class="fa-solid fa-film"></i> Cinema & Digital</span>
+                        <button class="inspect-btn"
+                            data-title="Feature Films & Narrative Series / ភាពយន្ត"
+                            data-cat="Movies & Cinema Production"
+                            data-lead="UNIVERSE HUOKAING THARA Production & Casting Team"
+                            data-notes="Includes screening events, cast showcases, and full-length entertainment releases.">
+                            <span class="km">មើលលម្អិត</span> / <span class="en">Details</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 2: Ghost Stories Khmer -->
+                <article class="content-card" data-cat="ghost">
+                    <div class="card-top">
+                        <span class="cat-badge">GHOST STORIES KHMER</span>
+                        <span class="status-tag">ACTIVE SERIES</span>
+                    </div>
+                    <h4 class="km">និទានរឿងខ្មោចខ្មែរ និងបទពិសោធន៍ព្រឺរោម</h4>
+                    <h4 class="en">Ghost Stories Khmer & Eerie Experiences</h4>
+                    <p class="km">រឿងព្រេងបុរាណ រឿងយប់ជ្រៅ និងបទពិសោធន៍ផ្ទាល់ដ៏រន្ធត់ព្រឺព្រួច ដែលមានការរួមចំណែកពីលោក ជອນ រតនៈ។</p>
+                    <p class="en">Traditional legends, midnight tales, and real-life eerie encounters featuring contributor Mr. Chorn Rothanak.</p>
+                    <div class="card-footer">
+                        <span class="meta-info"><i class="fa-solid fa-ghost"></i> Folklore & Horror</span>
+                        <button class="inspect-btn"
+                            data-title="Ghost Stories Khmer / និទានរឿងខ្មោចខ្មែរ"
+                            data-cat="Supernatural & Folklore"
+                            data-lead="Contributor Mr. Chorn Rothanak & UNIVERSE HUOKAING THARA"
+                            data-notes="Available in Khmer and English with interactive story reader and voice playback support.">
+                            <span class="km">មើលលម្អិត</span> / <span class="en">Details</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 3: Comedy & Pranks -->
+                <article class="content-card" data-cat="comedy">
+                    <div class="card-top">
+                        <span class="cat-badge">COMEDY & PRANKS</span>
+                        <span class="status-tag">HIGH ENGAGEMENT</span>
+                    </div>
+                    <h4 class="km">វីដេអូកំប្លែង ឈុតឆាកសប្បាយ និង Pranks</h4>
+                    <h4 class="en">Comedy Sketches & Creative Pranks</h4>
+                    <p class="km">បង្កើតសំណើច ភាពសប្បាយរីករាយ និងឈុតឆាកកម្សាន្តប្រចាំថ្ងៃ ដើម្បីផ្តល់ភាពធូរស្រាលដល់អ្នកទស្សនា។</p>
+                    <p class="en">Energetic comedy sketches, lighthearted pranks, and entertaining moments designed for broad viewership.</p>
+                    <div class="card-footer">
+                        <span class="meta-info"><i class="fa-solid fa-masks-theater"></i> Entertainment</span>
+                        <button class="inspect-btn"
+                            data-title="Comedy Sketches & Creative Pranks / វីដេអូកំប្លែង"
+                            data-cat="Comedy & Viral Entertainment"
+                            data-lead="UNIVERSE HUOKAING THARA Creative & Talent Crew"
+                            data-notes="Ideal for brand placement, sponsor shoutouts, and high-reach social campaigns.">
+                            <span class="km">មើលលម្អិត</span> / <span class="en">Details</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Item 4: Music -->
+                <article class="content-card" data-cat="music">
+                    <div class="card-top">
+                        <span class="cat-badge">MUSIC & AUDIO</span>
+                        <span class="status-tag">CREATIVE STUDIO</span>
+                    </div>
+                    <h4 class="km">តន្ត្រី បទចម្រៀង និងវីដេអូសំឡេង</h4>
+                    <h4 class="en">Music Releases & Audio Visuals</h4>
+                    <p class="km">គាំទ្រការផលិតបទចម្រៀង ភ្លេងประกอบ និងវីដេអូចម្រៀងដែលផ្សារភ្ជាប់ជាមួយសាច់រឿង និងវប្បធម៌។</p>
+                    <p class="en">Original tracks, background scores, and visual music content integrated across the group's media ecosystem.</p>
+                    <div class="card-footer">
+                        <span class="meta-info"><i class="fa-solid fa-music"></i> Audio & Visuals</span>
+                        <button class="inspect-btn"
+                            data-title="Music Releases & Audio Visuals / តន្ត្រី"
+                            data-cat="Music & Sound Production"
+                            data-lead="UNIVERSE HUOKAING THARA Media & Audio Team"
+                            data-notes="Supports soundtrack integration for films, stories, and interactive web experiences.">
+                            <span class="km">មើលលម្អិត</span> / <span class="en">Details</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Content Details Modal -->
+    <div id="contentModal" class="modal-backdrop hidden">
+        <div class="modal-card">
+            <span class="modal-badge">CONTENT BRIEF</span>
+            <h3 id="modalTitle">Content Title</h3>
+            <div class="modal-body">
+                <p><strong>Category:</strong> <span id="modalCat" class="accent-txt"></span></p>
+                <p><strong>Team / Lead:</strong> <span id="modalLead"></span></p>
+                <p id="modalNotes" class="modal-notes"></p>
+            </div>
+            <button id="closeContentModal" class="control-btn full-width">
+                <span class="km">បិទផ្ទាំង</span> / <span class="en">Close</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 UNIVERSE HUOKAING THARA Group. All Rights Reserved. / រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
